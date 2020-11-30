@@ -1,0 +1,7 @@
+/*especificidad -> 1*/
+body{
+    font: 400 1em Tahoma, sans-serif;
+    line-height: 1.8;
+    color: black;
+    margin-left: 3em;
+}
