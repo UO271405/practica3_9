@@ -59,8 +59,8 @@ class Meteo{
                 var fechaMedidaLocal      = (new Date(horaMedidaMiliSeg1970)).toLocaleDateString("es-ES");
 
                 $('.datos').empty();    
-                $('.datos').append('<img src="https://openweathermap.org/img/w/' + icono + '.png" height="64px" width="64px">');
-                $('.datos').append("<p>Número de elementos de XML: " + totalNodos + "<br>");
+                $('.datos').append('<img src="https://openweathermap.org/img/w/' + icono + '.png" alt="img weather">');
+                $('.datos').append("<br>Número de elementos de XML: " + totalNodos + "<br>");
                 $('.datos').append("Ciudad: " + ciudad + "<br>");
                 $('.datos').append("País: " + pais + "<br>");
                 $('.datos').append("Latitud: " + latitud + " grados<br>");
@@ -85,7 +85,7 @@ class Meteo{
                 $('.datos').append("Precipitación modo: " + precipitacionMode + "<br>");
                 $('.datos').append("Descripción: " + descripcion + "<br>");
                 $('.datos').append("Fecha de la medida: " + fechaMedidaLocal + "<br>");
-                $('.datos').append("Hora de la medida: " + horaMedidaLocal + "</p>");
+                $('.datos').append("Hora de la medida: " + horaMedidaLocal);
             },
             error:function(){
                 document.write(this.error);    
